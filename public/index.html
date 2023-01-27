@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .recycle-icon:hover svg path {
+        fill: red;
+      }
+      li {
+        list-style: none;
+      }
+      small {
+        text-transform: capitalize;
+      }
+    </style>
+  <script defer src="app.js"></script><link href="app.css" rel="stylesheet"></head>
+  <body>
+    <header>
+      <div class="container pt-5 text-center">
+        <h1 class="text-primary">Car Racing</h1>
+      </div>
+    </header>
+    <main class="pt-5">
+      <section class="container d-flex justify-content-center gap-5">
+        <form id="createEl" class="d-flex align-items-center gap-3">
+          <div class="form-group">
+            <input
+              type="text"
+              autocomplete="off"
+              class="form-control"
+              id="createCar"
+            />
+            <small class="form-text text-muted" style="display: none"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="color"
+              class="form-control"
+              id="car-color"
+              style="width: 50px"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+        <form id="updateCars" class="d-flex align-items-center gap-3">
+          <div class="form-group">
+            <input
+              type="text"
+              autocomplete="off"
+              class="form-control"
+              id="updateCar"
+            />
+            <small class="form-text text-muted" style="display: none"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="color"
+              class="form-control"
+              id="car-color"
+              style="width: 50px"
+            />
+          </div>
+          <button type="submit" class="btn btn-success">Update</button>
+        </form>
+      </section>
+      <section class="container d-flex justify-content-center pt-5">
+        <div class="d-flex gap-3 flex-wrap">
+          <button class="btn btn-primary" type="button">Race</button>
+          <button class="btn btn-secondary" type="button">Reset</button>
+          <button class="btn btn-warning" type="button">Generate</button>
+        </div>
+      </section>
+      <section class="container mt-3">
+        <ul></ul>
+      </section>
+    </main>
+  </body>
+</html>
